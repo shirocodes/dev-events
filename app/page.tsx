@@ -1,10 +1,6 @@
 import EventCard from "./components/EventCard"
 import ExploreBtn from "./components/ExploreBtn"
-
-const events = [
-  { image: "/images/event1.jpg", title: "Event 1", slug: "event-1", location: "Nairobi", date: "2024-09-15", time: "10:00" },
-  { image: "/images/event2.jpg", title: "Event 2", slug: "event-2", location: "Nairobi", date: "2024-09-16", time: "14:00" },
-]
+import { events } from "@/lib/constants"
 
 const page = () => {
   const gridMdCols = events.length < 3 ? "md:grid-cols-2" : "md:grid-cols-3"
